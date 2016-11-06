@@ -38,7 +38,7 @@ export class LoginComponent {
     const val=this.myForm.value;
 
     this.authService.login(val.login_email, val.login_password).subscribe(
-      () => this._router.navigate(['/']),
+      () => this._router.navigate(['/dashboard']),
       alert
     );
 

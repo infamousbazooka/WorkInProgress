@@ -10,7 +10,7 @@ export class MainComponent {
 
   routes: Object[] = [{
     title: 'Dashboard',
-    route: '/',
+    route: '/dashboard',
     icon: 'dashboard',
   }, {
     title: 'Product Dashboard',

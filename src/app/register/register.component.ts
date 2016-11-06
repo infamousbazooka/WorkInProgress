@@ -43,7 +43,7 @@ export class RegisterComponent implements OnInit {
     //TODO: Password matching and redo forms.
 
     this._authService.register(val.login_email, val.login_password_a).subscribe(
-      () => this._router.navigate(['/']),
+      () => this._router.navigate(['/dashboard']),
       alert
     );
 

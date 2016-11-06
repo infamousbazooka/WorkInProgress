@@ -19,14 +19,22 @@ import {MenuFormComponent} from "./menu/menu-form/menu-form.component";
 import {RestaurantProfileComponent} from "./restaurant-profile/restaurant-profile.component";
 
 const routes: Routes = [
-  {path: 'login', component: LoginComponent},
+
   {path: 'register', component: RegisterComponent},
 
   {
-    path: '', component: MainComponent, children: [{
-    component: DashboardComponent,
-    path: '',
-  },
+    path: '', component: MainComponent, children: [
+
+    {
+      component: LoginComponent,
+      path: '',
+    },
+
+    {
+      path : 'dashboard',
+      component : DashboardComponent,
+
+    },
 
 
     {
@@ -70,10 +78,6 @@ const routes: Routes = [
 
     ]
     },
-
-
-
-
 
 
   ]
