@@ -1,14 +1,21 @@
-# Covalent QuickStart
+# Dish Menu QuickStart
 
-Quickstart App with @covalent packages
+Dish Menu App with @covalent packages
 
 ## Setup
 
 * Ensure you have Node 4.4 and NPM 3+ installed.
-* Install Angular CLI `npm i -g angular-cli@1.0.0-beta.15`
-* Install Typescript 2.0 `npm i -g typescript`
-* Install TSLint `npm install -g tslint`
-* Install Protractor for e2e testing `npm install -g protractor`
-* Install Node packages `npm i`
-* Update Webdriver `webdriver-manager update` and `./node_modules/.bin/webdriver-manager update`
-* Run local build `ng serve`
+* cd into the folder and run `npm install`
+* ng serve to get the app started.
+
+## Warnings
+
+* THE APP WILL CRASH when you first launch it. Cause of routing. It needs to default to `LoginComponenet` First and then move to `MainComponent` 
+and `MainComponent` has methods that console.log the uid which isn't available as you haven't logged in yet.
+* Hence `http://localhost:4200/#/login` and login with test@test.com and testtest as user and password.
+
+## Docs
+
+* See `app.routes.ts`
+* Starting point of app is `MainComponent` have a look at the `main.component.html` for the html and the Coponents ts file.
+* `MainComponent` has a `routes: Object[]` that populates the Navigation bar to the left. By default it loads `DashboardComponent`, look at the `app.routes.ts` file.
