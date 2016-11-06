@@ -28,6 +28,8 @@
         Archived
       </a>
     </md-nav-list>
+
+
     <div toolbar-buttons layout="row" layout-align="start center" flex>
       <span>Users</span>
       <span flex></span>
@@ -36,7 +38,12 @@
       <button md-button class="md-icon-button"><md-icon class="md-24">settings</md-icon></button>
       <button md-button class="md-icon-button"><md-icon class="md-24">more_vert</md-icon></button>
     </div>
+
+
+
     <md-card tdMediaToggle="gt-xs" [mediaClasses]="['push']" class="push-bottom-xxl">
+
+
       <div [tdToggle]="toggleFilters" class="md-padding md-input-search">
         <div layout="row" class="md-input-search">
           <md-input #search placeholder="search" (keyup)="filterUsers(search.value)" flex>
@@ -45,6 +52,9 @@
           <md-icon class="clear-search" *ngIf="search.value" (click)="filterUsers() || search.value = ''">cancel</md-icon>
         </div>
       </div>
+
+
+
       <template tdLoading="users.list">
         <md-list class="will-load">
           <div class="md-padding" *ngIf="!filteredUsers || filteredUsers.length === 0" layout="row" layout-align="center center">
@@ -75,12 +85,19 @@
           </template>
         </md-list>
       </template>
+
+
+
       <md-divider></md-divider>
+
+
       <md-card-actions>
         <button md-button class="md-primary" (click)="goBack()">BACK</button>
       </md-card-actions>
-    </md-card> 
-  </td-layout-manage-list>   
+
+
+    </md-card>
+  </td-layout-manage-list>
 </td-layout-nav>
 <a md-fab color="accent" class="md-fab-position-bottom-right" [routerLink]="['add']">
   <md-icon>add</md-icon>

@@ -14,7 +14,7 @@ export class UserCheckService {
     this.ref = firebaseApp.database().ref(); //THis gets a reference to the base Database.
     this.auth = firebaseApp.auth();
 
-    this.UserID = _authService.getid();
+    //this.UserID = _authService.getid();
 
 
   }

@@ -14,6 +14,9 @@ import {DetailComponent} from './detail/detail.component';
 import {LoginComponent} from './login/login.component';
 import {FormComponent} from './form/form.component';
 import {RegisterComponent} from "./register/register.component";
+import {MenuComponent} from "./menu/menu.component";
+import {MenuFormComponent} from "./menu/menu-form/menu-form.component";
+import {RestaurantProfileComponent} from "./restaurant-profile/restaurant-profile.component";
 
 const routes: Routes = [
   {path: 'login', component: LoginComponent},
@@ -51,6 +54,28 @@ const routes: Routes = [
       {path: ':id/edit', component: UsersFormComponent},
     ]
     },
+
+
+    {
+      path: 'menu', children: [
+      {path: '', component: MenuComponent},
+      {path: 'add', component: MenuFormComponent},
+
+    ]
+    },
+
+    {
+      path: 'profile', children: [
+      {path: '', component: RestaurantProfileComponent},
+
+    ]
+    },
+
+
+
+
+
+
   ]
   },
 ];

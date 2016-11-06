@@ -33,12 +33,10 @@ export class DashboardComponent implements AfterViewInit {
               private  _af: AngularFire,
               private _checkUserService : UserCheckService){
 
-    /*TODO: Access user ID on login/Register. and check if link to existing restaturant. if YES. Nice. else prompt to profile.
+    //TODO: Access user ID on login/Register. and check if link to existing restaturant. if YES. Nice. else prompt to profile.
 
-     */
-    //console.log(this._authService.getid());
-    this._checkUserService.checkForRestaurantID();
 
+    //this._checkUserService.checkForRestaurantID();
 
 
   }

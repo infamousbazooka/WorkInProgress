@@ -35,6 +35,9 @@ import {ReactiveFormsModule, FormsModule} from "@angular/forms";
 import {AuthService} from "../services/auth/auth.service";
 import { RegisterComponent } from './register/register.component';
 import {UserCheckService} from "../services/user-check.service";
+import { MenuComponent } from './menu/menu.component';
+import { MenuFormComponent } from './menu/menu-form/menu-form.component';
+import { RestaurantProfileComponent } from './restaurant-profile/restaurant-profile.component';
 export const firebaseConfig = {
   apiKey: "AIzaSyA03fGccwYbO56Hnna3MAVAiMW7nna0Mmg",
   authDomain: "dish-menu.firebaseapp.com",
@@ -69,6 +72,9 @@ export const myFirebaseAuthConfig = {
     LoginComponent,
     ChartComponent,
     RegisterComponent,
+    MenuComponent,
+    MenuFormComponent,
+    RestaurantProfileComponent,
   ], // directives, components, and pipes owned by this NgModule
   imports: [
     BrowserModule,
